@@ -1,0 +1,82 @@
+\documentclass[10pt, conference, compsocconf]{IEEEtran}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}  % for \hookrightarrow
+\usepackage{xcolor}   % for \textcolor
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  columns=fullflexible,
+  frame=single,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue},
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\newcommand{\niklas}[1]{{\textbf{[Niklas says: #1]}}}
+
+\begin{document}
+
+\title{Implications of Conducting Internet of Things Experimentation in Urban Environments}
+
+\author{
+\IEEEauthorblockN{Lasse Steenbock Vestergaard}
+\IEEEauthorblockA{Smart Urban Designer\\
+The Alexandra Institute\\
+Aarhus, Denmark\\
+lasse.vestergaard@alexandra.dk}
+\and
+\IEEEauthorblockN{Niklas Kasenburg}
+\IEEEauthorblockA{Machine Learning Specialist\\
+The Alexandra Institute\\
+Copenhagen, Denmark\\
+niklas.kasenburg@alexandra.dk}
+\and
+\IEEEauthorblockN{Morten Skov Jørgensen}
+\IEEEauthorblockA{Senior Cyber-Physical Specialist\\
+The Alexandra Institute\\
+Copenhagen, Denmark\\
+morten.skov@alexandra.dk}
+}
+
+\maketitle
+
+\begin{abstract}
+Cities are constantly evolving, and are turning into hackable environments optimized for IoT experimentation. In this article, we tap into this movement in order to investigate practical implications of utilizing these kinds of environments when performing IoT experiments. We have conducted \textit{in the wild} research through deploying a Wi-Fi tracking infrastructure at two Danish festivals, and have performed quantitative analysis on the collected data. From running the experiments, in a non-laboratory setting, we found that hackable urban environments are interesting platforms for testing IoT technologies. Our findings also suggest that mundane aspects like access to power grids as well as availability and appearance of the build environment can have significant impact on the results of urban IoT experimentation. More generally, this suggest that cities are not hackable by default, and they need to be thoroughly designed and optimized for IoT in order to ensure successful experimentation.
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+IoT; Wi-Fi; Tracking; Cultural Events; Prototyping; Hacking; Experimentation; Smart City
+
+\end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+\input{IEEELaTeX_Letter_2Col/introduction.tex}
+
+\input{IEEELaTeX_Letter_2Col/relatedwork.tex}
+
+\input{IEEELaTeX_Letter_2Col/methodology.tex}
+
+\input{IEEELaTeX_Letter_2Col/cases.tex}
+
+\input{IEEELaTeX_Letter_2Col/discussion.tex}
+
+\input{IEEELaTeX_Letter_2Col/conclusion.tex}
+
+% use section* for acknowledgement
+\section*{Acknowledgment}
+The research has been supported by the Innovation Fund Denmark and we want to thank Northside and Haven festivals for letting us hack their physical infrastructures and especially their IT team for assisting us in doing so.
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,ref}
+
+\end{document}
+
+
